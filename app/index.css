@@ -106,7 +106,8 @@ a {
 .column {
   display: flex;
   flex-direction: column;
-  width: 500px;
+  width: 100%;
+  margin-bottom: 20px;
   align-items: center;
 }
 
@@ -142,4 +143,11 @@ a {
 
 .reset:hover {
   cursor: pointer;
+}
+
+@media only screen and (min-width: 768px) {
+  .column {
+    width: 500px;
+    margin-bottom: 0px;
+  }
 }
